@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(76, 0, 255);
+  color: aliceblue;
+}
+
+.App,
+.interfaxList,
+.footerInformation,
+.card-user-general,
+h1 {
+  width: 100%;
+}
+
+.footerInformation {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.footerInformation button {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(11, 241, 203);
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+}
+
+.footerInformation button:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+  color: rgb(11, 241, 203);
+}
+
+.footerInformation button:active {
+  background-color: rgb(11, 241, 203);
+  color: aliceblue;
+}
+
+.card-user-general {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  background-color: rgb(11, 241, 203);
+  padding: 3rem 0;
+}
+
+.card-user {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid aliceblue;
+  background-color: rgb(76, 0, 255);
+  border-radius: 5px;
+}
+
+h4 {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 1rem 0;
+  border-bottom: 2px solid;
+}
+
+.windowCard, .windowForm {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(19, 18, 18, 0.712);
+}
+
+.infoWindow, .infoForm  {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: rgb(76, 0, 255);
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.infoWindow button {
+  width: 100%;
+  display: block;
+  height: 40px;
+}
+
+.infoForm {
+  position: relative;
+}
+
+.butt-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  font-size: 40px;
+}
+
+.butt-close:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.butt-close:active {
+  transform: scale(0.8);
+}
+
+.infoForm input {
+  display: block;
+  border: none;
+  height: 30px;
+  text-align: center;
+  margin: .5rem;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.butt-update {
+  width: 173px;
+  height: 30px;
+  margin-top: 2rem;
+  background-color: rgb(11, 241, 203);
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+}
+
+.butt-update:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+  color: rgb(11, 241, 203);
+}
+
+.butt-update:active {
+  background-color: rgb(11, 241, 203);
+  color: aliceblue;
+}
+
+footer {
+  text-align: center;
+  padding: 4rem;
+  border-top: 2px solid white;
+}
