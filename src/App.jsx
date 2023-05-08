@@ -73,7 +73,7 @@ function App() {
       }
 
       <footer>
-        <p>Done by <strong>JuanQuéz</strong> | Microsoft Embassadors</p>
+        <p>Done by <strong>JuanQuéz</strong> | Developer</p>
       </footer>
     </div>
   )
