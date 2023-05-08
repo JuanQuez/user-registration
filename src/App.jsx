@@ -18,7 +18,7 @@ function App() {
   }, [])
 
   const getUsers = () => {
-    axios.get('https://users-crud.academlo.tech/users/')
+    axios.get('https://users-crud-yeqv.onrender.com/users/')
       .then(res => setUsersList(res.data))
   }
 
@@ -38,7 +38,7 @@ function App() {
   }
 
   const deleteUser = (userDeleted) => {
-    axios.delete(`https://users-crud.academlo.tech/users/${userDeleted.id}/`)
+    axios.delete(`https://users-crud-yeqv.onrender.com/users/${userDeleted.id}/`)
         .then(() => {
           getUsers()
           setWindowAdv(false)

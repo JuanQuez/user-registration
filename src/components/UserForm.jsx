@@ -24,13 +24,13 @@ const UserForm = ({ setNewForm, getUsers, userSelected, setUserSelected }) => {
 
     const submit = (data) => {
         if (userSelected) {
-            axios.put(`https://users-crud.academlo.tech/users/${userSelected.id}/`, data)
+            axios.put(`https://users-crud-yeqv.onrender.com/users/${userSelected.id}/`, data)
                 .then(() => {
                     getUsers()
                     deleteInput()
                 })
         } else {
-            axios.post('https://users-crud.academlo.tech/users/', data)
+            axios.post('https://users-crud-yeqv.onrender.com/users/', data)
                 .then(() => {
                     getUsers()
                     deleteInput()
@@ -49,10 +49,10 @@ const UserForm = ({ setNewForm, getUsers, userSelected, setUserSelected }) => {
                 <h2>Form</h2>
                 <button className='butt-close' onClick={() => deleteInput()}><i class='bx bx-x-circle' ></i></button>
                 <form onSubmit={handleSubmit(submit)}>
-                    <input type="text" id='first_name' {...register('first_name')} />
-                    <input type="text" id='last_name' {...register('last_name')} />
-                    <input type="email" id='email' {...register('email')} />
-                    <input type="password" id='password' {...register('password')} />
+                    <input type="text" id='first_name' {...register('first_name')} placeholder='First Name' />
+                    <input type="text" id='last_name' {...register('last_name')} placeholder='Last Name'/>
+                    <input type="email" id='email' {...register('email')} placeholder='user@gmail.com'/>
+                    <input type="password" id='password' {...register('password')} placeholder='Password'/>
                     <input type="date" id='birthday' {...register('birthday')} />
                     <button className='butt-update' type="submit">{userSelected ? "Update" : "Create User"}</button>
                 </form>
